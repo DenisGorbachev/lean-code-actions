@@ -2,13 +2,21 @@
  "packagesDir": "lake-packages",
  "packages":
  [{"git":
+   {"url": "https://github.com/fierce-nerds/Util.lean.git",
+    "subDir?": null,
+    "rev": "d69369ee087ced6dfe5930bca305cfa367e28ced",
+    "opts": {},
+    "name": "FierceNerds.Util",
+    "inputRev?": "main",
+    "inherited": false}},
+  {"git":
    {"url": "https://github.com/leanprover-community/mathlib4",
     "subDir?": null,
     "rev": "e70f8800f70f89b102ad7469128ace674213e1e5",
     "opts": {},
     "name": "mathlib",
     "inputRev?": "e70f8800f70f89b102ad7469128ace674213e1e5",
-    "inherited": false}},
+    "inherited": true}},
   {"git":
    {"url": "https://github.com/EdAyers/ProofWidgets4",
     "subDir?": null,

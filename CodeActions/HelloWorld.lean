@@ -1,9 +1,10 @@
 import Lean.Server.CodeActions
 import Std.CodeAction
+import FierceNerds.Util.Thought
 
 namespace FierceNerds.CodeActions
 
-open Lean Server Lsp
+open Lean Server Lsp FierceNerds.Util
 
 namespace HelloWorld
 
@@ -42,13 +43,7 @@ namespace HelloWorld
 
 def test : Nat → Nat := sorry
 
-inductive ThoughtTmp where
-  | mk : String → List ThoughtTmp → ThoughtTmp
-deriving Repr, Inhabited
-
-instance : Coe String ThoughtTmp := ⟨(.mk · [])⟩
-
-def todo : List ThoughtTmp := [
+def todo : List Thought := [
   ⟨
     "Ensure that helloWorldCodeActionProvider returns an action that inserts 'Hello world'",
     [

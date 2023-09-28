@@ -1,0 +1,6 @@
+pre-commit:
+  parallel: true
+  commands:
+    build:
+      # use `rm -r build` instead of `lake clean` to clean only the local package build output
+      run: rm -r build; lake build
