@@ -1,18 +1,19 @@
 import Lake
 open Lake DSL
 
--- FierceNerds.Util brings mathlib, std, aesop, doc-gen4, Qq as dependencies
-require FierceNerds.Util from git "https://github.com/fierce-nerds/Util.lean.git" @ "main"
+-- FierceNerdsUtil brings mathlib, std, aesop, doc-gen4, Qq as dependencies
+require FierceNerdsUtil from git "https://github.com/fierce-nerds/Util.lean.git" @ "main"
 
-package CodeActions {
+package FierceNerdsCodeActions {
   -- add package configuration options here
 }
 
-lean_lib CodeActions {
+lean_lib FierceNerdsCodeActions {
   -- add library configuration options here
 }
 
 @[default_target]
-lean_exe CodeActionsExe {
-  root := `Main
+lean_exe FierceNerdsCodeActionsMain {
+  root := `FierceNerdsCodeActions.Main
+  exeName := "fnca"
 }

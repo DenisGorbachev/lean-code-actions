@@ -1,10 +1,10 @@
 import Lean.Server.CodeActions
 import Std.CodeAction
-import FierceNerds.Util.Thought
+import FierceNerdsUtil.ThoughtDef
 
-namespace FierceNerds.CodeActions
+namespace FierceNerdsCodeActions
 
-open Lean Server Lsp FierceNerds.Util
+open Lean Server Lsp FierceNerdsUtil
 
 namespace HelloWorld
 
