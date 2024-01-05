@@ -1,18 +1,20 @@
 import FierceNerdsCodeActions.Scaffold
 import Lean.Server.References
-import FierceNerdsCodeActions.GlobalRefInfoDef
+import FierceNerdsCodeActions.FierceNerds.CodeActions.GlobalRefInfoDef_type
 import Lean.Data.Lsp.Internal
 import Lean.Elab.Import
-import FierceNerdsCodeActions.Addon.System.FilePath.Fun
-import FierceNerdsUtil.Array.Fun.Sep
-import FierceNerdsCodeActions.Addon.Lean.Elab.Frontend.State
+import FierceNerdsCodeActions.System.FilePath_fun
+import FierceNerdsUtil.Array_fun_sep
+import FierceNerdsCodeActions.Lean.Elab.Frontend.State
 
-namespace FierceNerdsCodeActions
+namespace FierceNerds.CodeActions
 
 open Lean Lsp Elab Command Frontend
 open System
 open FilePath
-open FierceNerdsUtil
+open FierceNerds Util
+
+namespace MoveDefinition
 
 def printMessages (s : Frontend.State) : IO Unit := do
   for msg in s.commandState.messages.toList do

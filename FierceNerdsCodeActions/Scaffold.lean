@@ -1,10 +1,10 @@
-import FierceNerdsUtil.Scaffold
+import FierceNerdsUtil.FierceNerds.Util.Scaffold
 import Lean.Data.Lsp.Basic
 
-namespace FierceNerdsCodeActions
+namespace FierceNerds.CodeActions
 
 open Lean.Lsp
-open FierceNerdsUtil
+open FierceNerds Util
 
 namespace Scaffold
 

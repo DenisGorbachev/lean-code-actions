@@ -1,7 +1,6 @@
 /build
 /lake-packages/*
-/build
-/lake-packages/*
+lakefile.olean
+
 /logs
 
-Scratchpad.lean

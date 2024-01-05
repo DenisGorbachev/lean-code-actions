@@ -4,7 +4,7 @@
  [{"git":
    {"url": "https://github.com/fierce-nerds/Util.lean.git",
     "subDir?": null,
-    "rev": "b0e51fe9d49c9d0d2b566b6345527662e3daa3f8",
+    "rev": "9c4a602054ac0bbc46113e229383c8c4c852e131",
     "opts": {},
     "name": "FierceNerdsUtil",
     "inputRev?": "main",

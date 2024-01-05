@@ -1,9 +1,9 @@
 import FierceNerdsCodeActions.Scaffold
 
-namespace FierceNerdsCodeActions
+namespace FierceNerds.CodeActions
 
 open Lean
-open FierceNerdsUtil
+open FierceNerds Util
 
 structure SaveImplDecision where
   name : String

@@ -1,9 +1,9 @@
 import FierceNerdsCodeActions.Scaffold
 import Init.System.FilePath
-import FierceNerdsCodeActions.FileContent.Basic
 import Lean.Server.Snapshots
+import FierceNerdsUtil.System.FileContent_type
 
-namespace FierceNerdsCodeActions
+namespace FierceNerds.CodeActions
 
 open Lean System IO Server Snapshots
 

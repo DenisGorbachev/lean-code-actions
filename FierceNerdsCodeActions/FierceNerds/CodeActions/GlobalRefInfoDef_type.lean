@@ -1,9 +1,9 @@
 import FierceNerdsCodeActions.Scaffold
 
-namespace FierceNerdsCodeActions
+namespace FierceNerds.CodeActions
 
 open Lean.Lsp
-open FierceNerdsUtil
+open FierceNerds Util
 
 structure GlobalRefInfo where
   definition : Location

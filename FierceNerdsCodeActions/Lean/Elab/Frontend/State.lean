@@ -1,12 +1,12 @@
 import FierceNerdsCodeActions.Scaffold
-import FierceNerdsCodeActions.Addon.System.FilePath.Fun
-import FierceNerdsUtil.Array.Fun.Sep
+import FierceNerdsCodeActions.System.FilePath_fun
+import FierceNerdsUtil.System.FileContent_fun
+import FierceNerdsUtil.Array_fun_sep
 
 namespace Lean.Elab.Frontend
 
-open Lean System FilePath
-open FierceNerdsUtil
-
+open Lean System FilePath FileContent
+open FierceNerds Util
 
 /--
 Notes:
@@ -37,8 +37,5 @@ def loadFileByName
   loadFile fileName mainModuleName content opts trustLevel
 
 def loadDir (dir : FilePath) : IO Frontend.State := do
-  let paths ← getLeanFilePaths dir
-  let imports := paths.map (· |> FilePath.moduleNameOfFileName dir |> (s!"import {·}"))
-  let contents := imports.joinWith "\n"
-  loadFile "<generated>" default contents default default
-
+  let content ← getUmbrellaFileContent dir
+  loadFile "<generated>" default content default default

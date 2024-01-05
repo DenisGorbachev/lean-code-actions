@@ -1,10 +1,10 @@
 import FierceNerdsCodeActions.Scaffold
-import FierceNerdsCodeActions.Addon.System.FilePath.Fun
+import FierceNerdsCodeActions.System.FilePath_fun
 import Mathlib.Tactic.SlimCheck
 
 namespace System.FilePath
 
-open FierceNerdsUtil
+open FierceNerds Util
 
 def rootDir := "/home/username/project"
 def testPath1 := "/home/username/project/FierceNerdsCodeActions/FilePath.lean"
